@@ -28,7 +28,7 @@ def digits_pressed(digit):
     print_response(display, new_number)
 def run(duration):
     tmp = 255
-    decrement_value = int(255 / duration)
+    decrement_value = max(int(255 / duration), 1)
     counter = duration 
     while counter > 0:
         print_response(display, str(counter))
