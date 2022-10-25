@@ -24,34 +24,34 @@ response_display = widget.ResponseDisplay(window, 45, 1050, 120, "Helvetica 10",
 control.display = display.display
 control.response_display = response_display.response_display
 
-# The 10 buttons represents 0 to 9
+# The 10 buttons represent 0 to 9
 
-button_1 = widget.DigitButton(window, "1", 1080, 200, display.display)
-button_2 = widget.DigitButton(window, "2", 1180, 200,display.display)
-button_3 = widget.DigitButton(window, "3", 1280, 200, display.display)
+button_1 = widget.DigitButton(window, "1", 1080, 200)
+button_2 = widget.DigitButton(window, "2", 1180, 200)
+button_3 = widget.DigitButton(window, "3", 1280, 200)
 
-button_4 = widget.DigitButton(window, "4", 1080, 300, display.display)
-button_5 = widget.DigitButton(window, "5", 1180, 300,display.display)
-button_6 = widget.DigitButton(window, "6", 1280, 300, display.display)
+button_4 = widget.DigitButton(window, "4", 1080, 300)
+button_5 = widget.DigitButton(window, "5", 1180, 300)
+button_6 = widget.DigitButton(window, "6", 1280, 300)
 
-button_7 = widget.DigitButton(window, "7", 1080, 400, display.display)
-button_8 = widget.DigitButton(window, "8", 1180, 400,display.display)
-button_9 = widget.DigitButton(window, "9", 1280, 400,display.display)
+button_7 = widget.DigitButton(window, "7", 1080, 400)
+button_8 = widget.DigitButton(window, "8", 1180, 400)
+button_9 = widget.DigitButton(window, "9", 1280, 400)
 
-button_0 = widget.DigitButton(window, "0", 1180, 500, display.display)
+button_0 = widget.DigitButton(window, "0", 1180, 500)
 
 # The rest of the buttons
 
-enter_button = widget.BooleanButton(window, "Enter", 1250, 490,display.display,response_display.response_display,  width=8, height=2)
-backspacke_button = widget.BooleanButton(window, "⌫", 1050, 490, display.display, response_display.response_display, width=5,height=2)
+enter_button = widget.BooleanButton(window,"Enter", 1250, 490, width=8, height=2)
+backspacke_button = widget.BooleanButton(window, "⌫", 1050, 490, width=5,height=2)
 
-manual_button = widget.BooleanButton(window, "Manual", 1130, 585,display.display,response_display.response_display ,width=10, height=2)
+manual_button = widget.BooleanButton(window, "Manual", 1130, 585, width=10, height=2)
 
-defrost_meat_button = widget.BooleanButton(window, "Defrost\nMeat", 1070, 825,display.display,response_display.response_display,width=8, height=2)
-defrost_vegetables_button = widget.BooleanButton(window, "Defrost\nVegetables", 1220, 825,display.display,response_display.response_display, width=10, height=2)
+defrost_meat_button = widget.BooleanButton(window, "Defrost\nMeat", 1070, 825, width=8, height=2)
+defrost_vegetables_button = widget.BooleanButton(window, "Defrost\nVegetables", 1220, 825, width=10, height=2)
 
-reheat_button = widget.BooleanButton(window, "Reheat", 1130, 665,display.display,response_display.response_display, width=10, height=2)
-cook_button = widget.BooleanButton(window, "Cook", 1130, 735,display.display,response_display.response_display, width=10, height=2)
+reheat_button = widget.BooleanButton(window, "Reheat", 1130, 665, width=10, height=2)
+cook_button = widget.BooleanButton(window, "Cook", 1130, 735, width=10, height=2)
 
 # Initial response of the microwave
 control.last_clicked = "Introduction"
