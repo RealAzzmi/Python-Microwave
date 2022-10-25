@@ -24,7 +24,7 @@ response_display = widget.ResponseDisplay(window, 45, 1050, 120, "Helvetica 10",
 control.display = display.display
 control.response_display = response_display.response_display
 
-# The 10 buttons represents 0 to 9
+# The 10 buttons represent 0 to 9
 
 button_1 = widget.DigitButton(window, "1", 1080, 200, display.display)
 button_2 = widget.DigitButton(window, "2", 1180, 200,display.display)
