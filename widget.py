@@ -6,6 +6,7 @@ class Display:
         self.display = tk.Entry(
             window,
             width=width,
+            justify="center",  # To center the text
             font=font
             )
         self.display.configure(state="readonly")
@@ -17,17 +18,15 @@ class ResponseDisplay:
         window,
         width=width,
         font=font,
-        justify="center", # To center the text
+        justify="center",
         fg=fg
         )
         self.response_display.configure(state="readonly")
         self.response_display.place(x=x_pos, y=y_pos)
 
 class DigitButton:
-    def __init__(self, window, text, x_pos, y_pos, display, width=2, height=1):
-        self.display = display
+    def __init__(self, window, text, x_pos, y_pos, width=2, height=1):
         self.text = text
-
         self.button = tk.Button(
         window,
         text=text,
@@ -47,10 +46,8 @@ class DigitButton:
         control.execute()
 
 class BooleanButton:
-    def __init__(self, window, text, x_pos, y_pos, display, response_display, width=2, height=1):
+    def __init__(self, window, text, x_pos, y_pos,width=2, height=1):
         self.text = text
-        self.display = display
-        self.response_display = response_display
         self.button = tk.Button(
         window,
         text=text,
