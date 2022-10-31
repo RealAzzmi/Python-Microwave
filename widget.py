@@ -35,7 +35,7 @@ class DigitButton:
         bg="black",
         fg="white",
         command=self.on_click,
-        font="Helvetica 25",
+        font="Helvetica 15",
         bd=0,
         highlightthickness=0
         )
@@ -54,7 +54,7 @@ class BooleanButton:
         width=width,
         height=height,
         command=self.on_click,
-        font="Helvetica 20",
+        font="Helvetica 10",
         bg="#000000",
         fg="white",
         bd=0,
